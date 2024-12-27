@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c1ab5f16d.js" crossorigin="anonymous"></script>
+    <title>Ethics and Morality</title>
+    <style>
+        .bg-container{
+            background-color:#fdf9f2;
+            background-size: cover;
+            height: 100vh;
+        }
+        .heading {
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 5px;
+            color: #a55834ea;
+        }
+        .verse {
+            margin: 15px;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #3a3a3a;
+            background: #f9f5ec;
+            padding: 10px;
+            border-left: 4px solid #d4af37;
+        }
+        .verse-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: start;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .verse, .translation {
+            padding: 15px;
+            background-color: #f9f5ec;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .translation {
+            margin: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #3a3a3a;
+            background: #f9f5ec;
+            padding: 10px;
+            border-left: 4px solid #d4af37;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .text-container {
+            box-shadow: 0 2px 6px rgb(98, 42, 24);
+            margin: 12px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .button {
+            background-color: blanchedalmond;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(117, 52, 30, 0.734);
+            padding: 7px;
+        } 
+        nav {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        z-index: 1;
+        background-color: rgba(219, 155, 71, 0.521);
+        padding: 0px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0; 
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .Unordered-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        }
+
+        ul li {
+        position: relative;
+        }
+
+        ul li a {
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        }
+
+    
+        ul li a:hover {
+        color: black;
+        }
+        .navbar-dropdown {
+            margin-top: 30px;
+            margin-bottom: 20px; 
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: rgba(219, 155, 71, 0.521);
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            height:fit-content;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width:max-content;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #a55834ea;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .lines {
+          color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="Unordered-list">
+          <li><a href="ino_gita.html">Home</a></li>
+          <li><a href="gita_contents.html">Contents</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="gita_contents.html">Back</li>
+
+        </ul>
+      </nav>
+    <div class="bg-container" style="padding:20px;margin-top:40px;">
+        <div class="navbar-dropdown">
+            <div class="dropdown">
+    
+                <button class="dropdown-button">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="mental_health.html">1. Mental Health and Stress Management</a>
+                    <a href="decision.html">2. Decision Making and Leadership</a>
+                    <a href="work_life.html">3. Work-Life Balance and Career</a>
+                    <a href="growth.html">4. Personal Growth and Self-Realization</a>
+                    <a href="fear.html">5. Overcoming Fear and Doubt</a>
+                    <a href="relationship.html">6. Relationships and Emotional Well-being</a>
+                    <a href="meditation.html">7. Spiritual Growth and Meditation</a>
+                    <a href="ethics.html">8. Ethics and Morality</a>
+                    <a href="purpose.html">9. Living with Purpose</a>
+                    <a href="manage.html">10. Managing Materialism and Detachment</a>
+                </div>
+          </div>
+        </div>
+        <h1 class="heading">8. ETHICS AND MORALITY</h1>
+        <h2 class="heading">Gita Teaching: Right Action (Dharma) (Chapter 3, Verse 35)</h2>
+        <div class="text-container">
+        <h4 class="verse">
+            Verse: <br>
+            śhreyān swa-dharmo viguṇaḥ para-dharmāt sv-anuṣhṭhitāt<br>swa-dharme nidhanaṁ śhreyaḥ para-dharmo bhayāvahaḥ
+        <h4>
+        <p class="translation">
+            Translation: <br>
+            It is far better to perform one’s natural prescribed duty, though tinged with faults, than to perform another’s
+             prescribed duty, though perfectly. In fact, it is preferable to die in the discharge of one’s duty, than to follow the path of another, which is fraught with danger.
+        </p>
+        <div class="d-flex flex-container justify-content-end">
+        <button type="button" class="button" data-toggle="modal" data-target="#exampleModal" >
+            Modern Application
+          </button>
+        </div>
+          <div class="modal fad" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modern Application</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Navigating Moral Dilemmas with Dharma and Righteous Action</h3>
+                    <div style="font-weight: lighter;">
+                    <p style="padding:20px;margin: 10px;">
+                        In today’s complex world, individuals regularly encounter moral and ethical dilemmas, both in their personal and professional lives. These dilemmas can involve questions 
+                         integrity, fairness, responsibility, and justice. The Gita’s teachings on dharma provide valuable guidance for navigating such challenges. Dharma is not just about 
+                         adhering to social or professional norms but about following one's inner sense of what is right, guided by a higher sense of purpose and duty. It is the alignment between 
+                         ethical action and one’s personal values, regardless of external pressures or immediate benefits.
+                        <ul>
+                            <li>
+                                <span style="font-weight: bold;">Understanding Dharma in Modern Contexts</span>
+                                <h5>Dharma as Personal Responsibility:</h5>
+                                <p>
+                                    In the Gita, dharma refers to one’s duty or righteous path, which is determined by one’s role in life, personal values, and unique circumstances. 
+                                    In today’s world, this could be seen as the moral compass guiding individuals in their personal and professional lives. Whether it’s fulfilling 
+                                    responsibilities as a family member, being honest in business dealings, or acting with integrity in friendships, dharma calls for individuals to perform their duties in alignment with ethical principles.
+                                </p>
+                                <h5>Balancing Personal and Professional Duties:</h5>
+                                <p>
+                                    Often, moral dilemmas arise when there is a conflict between personal and professional obligations. The Gita’s teaching reminds individuals that staying true
+                                     to their personal values and acting with integrity is more important than conforming to societal or workplace expectations that contradict their sense of right and wrong.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Facing Ethical Challenges in Professional Life</span>
+                                <h5>Dealing with Workplace Ethics:</h5>
+                                <p>In the professional world, ethical challenges can range from dealing with dishonest colleagues, pressure to cut corners, or making decisions that prioritize 
+                                    profit over people. The Gita teaches that one should act according to dharma, even if it means standing against the majority or risking immediate rewards. This might mean choosing honesty over personal gain, fairness over favoritism, 
+                                     or taking responsibility for actions even in difficult situations. </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Ethics in Personal Relationships</span>
+                                <h5>Balancing Compassion and Boundaries:</h5>
+                                <p> Ethical dilemmas also arise in personal relationships, where the challenge may be balancing compassion and emotional boundaries. For instance, one may struggle 
+                                    with whether to continue supporting a friend whose actions are harmful to themselves or others. The Gita’s concept of dharma suggests that true compassion 
+                                    sometimes involves making difficult decisions that align with moral duty, such as encouraging accountability or creating healthy boundaries, even if it causes temporary discomfort.</p>
+                                <h5>Navigating Family Responsibilities:</h5>
+                                <p>
+                                    In family situations, individuals often face the challenge of balancing personal desires with familial duties. Following dharma means making decisions that are morally right and in alignment with long-term well-being, 
+                                    rather than merely fulfilling obligations out of guilt or societal pressure.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Dharma and Decision-Making: Acting with a Higher Purpose</span>
+                                <h5>Acting with Integrity:</h5>
+                                <p>Krishna’s emphasis on dharma involves acting in line with one’s higher purpose, without attachment to personal gain or external recognition. This is particularly relevant in moments of ethical uncertainty, 
+                                    where following one’s values—regardless of the potential losses or opposition—becomes crucial. This principle helps individuals build 
+                                    a foundation of trust, respect, and authenticity, whether in business or personal interactions.</p>
+                                <h5>Letting Go of the Fear of Failure:</h5>
+                                <p> Krishna also encourages letting go of attachment to outcomes. In ethical dilemmas, fear of failure or disapproval often clouds judgment. However, by focusing on the righteous action itself,
+                                     rather than its potential consequences, one can act with clarity and strength. This detachment allows individuals to take the right course of action, 
+                                    even if it leads to temporary setbacks, knowing that they are acting in line with their true values.
+                                </p>
+                                <h5>Purpose-Driven Leadership:</h5>
+                                <p>
+                                    For those in leadership positions, the Gita’s teaching on dharma encourages leading with integrity, fairness, and a long-term vision. Leaders who make ethical decisions, even when they are unpopular
+                                     or challenging, create cultures of trust and accountability. Such leaders inspire others to act ethically and align with a higher purpose beyond mere profit or personal success.
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowLeft") {
+                window.location.href = "meditation.html";
+            } else if (event.key === "ArrowRight") {
+                window.location.href = "purpose.html";
+            }
+        });
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdown");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7l" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color:#fdf9f2;
+            background-size: cover;
+            background-position: center;
+        }
+
+        nav {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        z-index: 1;
+        background-color: rgba(219, 155, 71, 0.521);
+        padding: 0px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0; 
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .Unordered-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        }
+
+        ul li {
+        position: relative;
+        }
+
+        ul li a {
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        }
+
+    
+        ul li a:hover {
+        color: black;
+        }
+
+        .card-container {
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 8px 13px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .card h4 {
+            font-size: 1.5em;
+            color: #a0522d;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #333;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .app-link {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+        }
+
+        .app-link:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="Unordered-list">
+            <li><a href="ino_gita.html">Home</a></li>
+            <li><a href="gita_contents.html">Contents</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="gita_home.html">Back</a></li>
+        </ul>
+    </nav>
+    <div class="card-container">
+        
+        <div class="card">
+            <h4>What is Bhagavad Gita?</h4>
+            <p>The Bhagavad Gita, often referred to simply as the Gita, is a 700-verse Hindu scripture that is part of the ancient Indian epic, the Mahabharata. It is a philosophical dialogue between Prince Arjuna, a warrior, and Lord Krishna, his charioteer, set on the battlefield of Kurukshetra.</p>
+        </div>
+        
+        <div class="card">
+            <h4>Significance of Bhagavad Gita</h4>
+            <p>The Bhagavad Gita holds immense significance as a spiritual and philosophical guide. It addresses fundamental questions about life, duty, and purpose, offering wisdom that transcends religious boundaries.</p>
+        </div>
+        
+        <div class="card">
+            <h4>Gita teachings for today's challenges</h4>
+            <p>The Bhagavad Gita offers invaluable teachings for addressing today’s challenges, such as its principle of selfless action (karma yoga), promoting resilience and inner balance in a competitive world.</p>
+        </div>
+    </div>
+    <a href="gita_contents.html" class="app-link">Discover modern applications of the Bhagavad Gita &rarr;</a>
+    </div>
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowLeft") {
+                window.location.href = "gita_home.html";
+            } else if (event.key === "ArrowRight") {
+                window.location.href = "gita_contents.html";
+            }
+        });
+    </script>
+</body>
+</html>

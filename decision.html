@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c1ab5f16d.js" crossorigin="anonymous"></script>
+    <title>Decision Making and Leadership</title>
+    <style>
+        .bg-container{
+            background-color:#fdf9f2;
+            background-size: cover;
+            height: 100vh;
+        }
+        .heading {
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 5px;
+            color: #a55834ea;
+        }
+        .verse {
+            margin: 15px;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #3a3a3a;
+            background: #f9f5ec;
+            padding: 10px;
+            border-left: 4px solid #d4af37;
+        }
+        .verse-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: start;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .verse, .translation {
+            padding: 15px;
+            background-color: #f9f5ec;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .translation {
+            margin: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #3a3a3a;
+            background: #f9f5ec;
+            padding: 10px;
+            border-left: 4px solid #d4af37;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .text-container {
+            box-shadow: 0 2px 6px rgb(98, 42, 24);
+            margin: 12px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .button {
+            background-color: blanchedalmond;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(117, 52, 30, 0.734);
+            padding: 7px;
+        } 
+        nav {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        z-index: 1;
+        background-color: rgba(219, 155, 71, 0.521);
+        padding: 0px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0; 
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .Unordered-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        }
+
+        ul li {
+        position: relative;
+        }
+
+        ul li a {
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        }
+
+    
+        ul li a:hover {
+        color: black;
+        }
+        .navbar-dropdown {
+            margin-top: 30px;
+            margin-bottom: 20px; 
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: rgba(219, 155, 71, 0.521);
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            height:fit-content;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width:max-content;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #a55834ea;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .lines {
+          color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="Unordered-list">
+          <li><a href="ino_gita.html">Home</a></li>
+          <li><a href="gita_contents.html">Contents</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="gita_contents.html">Back</li>
+          
+
+        </ul>
+      </nav>
+    <div class="bg-container" style="padding:20px;margin-top:40px;">
+        <div class="navbar-dropdown">
+            <div class="dropdown">
+    
+                <button class="dropdown-button">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="mental_health.html">1. Mental Health and Stress Management</a>
+                    <a href="decision.html">2. Decision Making and Leadership</a>
+                    <a href="work_life.html">3. Work-Life Balance and Career</a>
+                    <a href="growth.html">4. Personal Growth and Self-Realization</a>
+                    <a href="fear.html">5. Overcoming Fear and Doubt</a>
+                    <a href="relationship.html">6. Relationships and Emotional Well-being</a>
+                    <a href="meditation.html">7. Spiritual Growth and Meditation</a>
+                    <a href="ethics.html">8. Ethics and Morality</a>
+                    <a href="purpose.html">9. Living with Purpose</a>
+                    <a href="manage.html">10. Managing Materialism and Detachment</a>
+                </div>
+          </div>
+        </div>
+        <h1 class="heading">2. DECISION MAKING AND LEADERSHIP</h1>
+        <h2 class="heading">Gita Teaching: Act According to Your Duty (Chapter 2, Verse 31)</h2>
+        <div class="text-container">
+        <h4 class="verse">
+            Verse: <br>
+            swa-dharmam api chāvekṣhya na vikampitum arhasi <br>dharmyāddhi yuddhāch chhreyo ’nyat kṣhatriyasya na vidyate
+        <h4>
+        <p class="translation">
+            Translation: <br>
+            Besides, considering your duty as a warrior, you should not waver. Indeed, for a warrior, 
+            there is no better engagement than fighting for upholding of righteousness.
+        </p>
+        <div class="d-flex flex-container justify-content-end">
+        <button type="button" class="button" data-toggle="modal" data-target="#exampleModal" >
+            Modern Application
+          </button>
+        </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modern Application</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Duty and Dharma in Decision Making and Leadership</h3>
+                    <div style="font-weight: lighter;">
+                    <p>
+                        In the modern world, dharma can be understood as one’s role or duty in life, whether personal, 
+                        professional, or social. Krishna's advice to Arjuna has deep relevance for modern leaders, particularly 
+                        when it comes to making tough decisions with ethics and responsibility.
+                        Here’s how Krishna's advice on duty (dharma) can guide you:
+                        <ul>
+                            <li>
+                                <span style="font-weight: bold;">Clarity of Purpose</span>
+                                <h5>Teaching:</h5>
+                                <p>Krishna’s guidance to Arjuna is clear: his duty as a warrior takes precedence over personal attachments and fears.</p>
+                                <h5>Application to Leadership:</h5>
+                                <p>
+                                    Leaders must have a clear understanding of their role and responsibilities. This clarity of purpose allows them to make
+                                     decisions aligned with their mission, even in the face of opposition or uncertainty. Just as Krishna emphasized Arjuna’s
+                                    duty as a warrior, modern leaders must stay focused on their core responsibilities.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Ethical Decision Making</span>
+                                <h5>Teaching:</h5>
+                                <p>Krishna speaks of righteousness and duty, which implies making decisions that are not only effective but also ethically sound.</p>
+                                <h5>Application to Leadership:</h5>
+                                <p>Ethical decision-making is crucial in leadership. Modern leaders often face dilemmas where the easy or profitable choice may not be
+                                     the right one. Krishna's teachings emphasize acting according to dharma—the ethical and moral duty in a given situation.
+                                     Leaders should be guided by a strong ethical compass, ensuring that their decisions benefit the greater good, even if it
+                                      means taking a harder or more unpopular path.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Responsibility to the Greater Good</span>
+                                <h5>Teaching:</h5>
+                                <p> Krishna advises Arjuna to act for the greater cause of righteousness, rather than for personal gain or out of fear of loss.</p>
+                                <h5>Application to Leadership:</h5>
+                                <p>
+                                    True leadership is about serving others and acting in the best interests of the collective, not 
+                                    just oneself. Leaders must recognize their responsibility to stakeholders, employees, and society.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Overcoming Personal Attachment</span>
+                                <h5>Teaching:</h5>
+                                <p>Arjuna was initially paralyzed by personal attachments. Krishna teaches him to overcome those 
+                                    attachments and act with detachment for the sake of duty.</p>
+                                <h5>Application to Leadership:</h5>
+                                <p>Leaders often face situations where personal biases, emotions, or attachments can cloud their judgment.
+                                    Leaders must make tough decisions with objectivity, free from emotional entanglements or personal biases. 
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Acting with Courage and Conviction</span>
+                                <h5>Teaching:</h5>
+                                <p>Krishna’s counsel to Arjuna encourages him to face his duty with courage, even though it involves hardship and conflict. Krishna reinforces that Arjuna must act, without being bogged down by doubts and fear.</p>
+                                <h5>Application to Leadership:</h5>
+                                <p>
+                                    Leadership often requires the courage to make difficult decisions, especially when the stakes are high. 
+                                    The Gita teaches that leaders must act with conviction and courage, even in the face of challenges, criticism, or uncertainty.
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                    
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowLeft") {
+                window.location.href = "mental_health.html";
+            } else if (event.key === "ArrowRight") {
+                window.location.href = "work_life.html";
+            }
+        });
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdown");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

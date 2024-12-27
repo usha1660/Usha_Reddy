@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c1ab5f16d.js" crossorigin="anonymous"></script>
+    <title>Living with Purpose</title>
+    <style>
+        .bg-container{
+            background-color:#fdf9f2;
+            background-size: cover;
+            height: 100vh;
+        }
+        .heading {
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 5px;
+            color: #a55834ea;
+        }
+        .verse {
+            margin: 15px;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #3a3a3a;
+            background: #f9f5ec;
+            padding: 10px;
+            border-left: 4px solid #d4af37;
+        }
+        .verse-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: start;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .verse, .translation {
+            padding: 15px;
+            background-color: #f9f5ec;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .translation {
+            margin: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #3a3a3a;
+            background: #f9f5ec;
+            padding: 10px;
+            border-left: 4px solid #d4af37;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .text-container {
+            box-shadow: 0 2px 6px rgb(98, 42, 24);
+            margin: 12px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .button {
+            background-color: blanchedalmond;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(117, 52, 30, 0.734);
+            padding: 7px;
+        } 
+        nav {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        z-index: 1;
+        background-color: rgba(219, 155, 71, 0.521);
+        padding: 0px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        }
+
+        .Unordered-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        }
+
+        ul li {
+        position: relative;
+        }
+
+        ul li a {
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        }
+
+    
+        ul li a:hover {
+        color: black;
+        }
+        .navbar-dropdown {
+            margin-top: 30px;
+            margin-bottom: 20px; 
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: rgba(219, 155, 71, 0.521);
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            height:fit-content;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width:max-content;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #a55834ea;
+            border-radius: 20px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .lines {
+          color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="Unordered-list">
+          <li><a href="ino_gita.html">Home</a></li>
+          <li><a href="gita_contents.html">Contents</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="gita_contents.html">Back</li>
+
+        </ul>
+      </nav>
+    <div class="bg-container" style="padding:20px;margin-top:40px;">
+        <div class="navbar-dropdown">
+            <div class="dropdown">
+    
+                <button class="dropdown-button">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="mental_health.html">1. Mental Health and Stress Management</a>
+                    <a href="decision.html">2. Decision Making and Leadership</a>
+                    <a href="work_life.html">3. Work-Life Balance and Career</a>
+                    <a href="growth.html">4. Personal Growth and Self-Realization</a>
+                    <a href="fear.html">5. Overcoming Fear and Doubt</a>
+                    <a href="relationship.html">6. Relationships and Emotional Well-being</a>
+                    <a href="meditation.html">7. Spiritual Growth and Meditation</a>
+                    <a href="ethics.html">8. Ethics and Morality</a>
+                    <a href="purpose.html">9. Living with Purpose</a>
+                    <a href="manage.html">10. Managing Materialism and Detachment</a>
+                </div>
+          </div>
+        </div>
+        <h1 class="heading">9. LIVING WITH PURPOSE</h1>
+        <h2 class="heading">Gita Teaching: Finding and Fulfilling Your Life’s Purpose (Chapter 3, Verse 9)</h2>
+        <div class="text-container">
+        <h4 class="verse">
+            Verse: <br>
+            yajñārthāt karmaṇo ’nyatra loko ’yaṁ karma-bandhanaḥ<br>tad-arthaṁ karma kaunteya mukta-saṅgaḥ samāchara
+        <h4>
+        <p class="translation">
+            Translation: <br>
+            Work must be done as a yajna to the Supreme Lord; otherwise, work causes bondage in this material world.
+             Therefore, O son of Kunti, for the satisfaction of God, perform your prescribed duties, without being attached to the results.
+        </p>
+        <div class="d-flex flex-container justify-content-end">
+        <button type="button" class="button" data-toggle="modal" data-target="#exampleModal" >
+            Modern Application
+          </button>
+        </div>
+          <div class="modal fad" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modern Application</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h3>The Pursuit of Purpose and Passion in Modern Life</h3>
+                    <div style="font-weight: lighter;">
+                    <p style="padding:20px;margin: 10px;">
+                        In today’s world, the search for purpose and passion is a common aspiration, especially as people strive to balance their personal responsibilities with their desire for meaningful careers and 
+                        fulfilling lives. The Gita’s teachings on purpose-driven action provide timeless guidance for individuals seeking clarity in their path, encouraging them to live with purpose while remaining 
+                        grounded in their responsibilities. The key is to find a balance between pursuing personal passions and fulfilling one’s duties, whether at work, in relationships, or in society.
+                        <ul>
+                            <li>
+                                <span style="font-weight: bold;">Purpose-Driven Living: Finding Meaning Beyond Material Success</span>
+                                <h5>Purpose Over Possession:</h5>
+                                <p>
+                                    The Bhagavad Gita teaches that true fulfillment comes from living in alignment with one’s dharma not from the pursuit of material possessions or external achievements. In the modern 
+                                    world, many people chase wealth, status, or recognition, only to feel unfulfilled. The Gita encourages individuals to look inward and discover what brings them a sense of purpose, 
+                                    whether that is through serving others, creating something meaningful, or contributing to a cause that transcends personal gain.
+                                </p>
+                                <h5>Passion and Dharma:</h5>
+                                <p>
+                                    Passion alone is not enough for true fulfillment—it must be linked to dharma, or righteous action. This means using your talents and passions to contribute to the greater good, 
+                                    aligning your work and goals with your values and moral principles. By identifying and pursuing work that is both meaningful and ethical, individuals can find deeper satisfaction and purpose in their careers and lives.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Balancing Responsibilities with Passion</span>
+                                <h5>Fulfilling Duties While Pursuing Passion:</h5>
+                                <p>
+                                    The Gita teaches that life’s purpose often involves balancing personal passions with responsibilities. Whether it’s taking care of family, managing work duties, or contributing to one’s 
+                                    community, individuals are called to fulfill their duties (karma) while still pursuing their personal growth and passions. This means not abandoning one for the other but finding a way to 
+                                    integrate both. The modern challenge of juggling career ambitions with personal responsibilities can be addressed by staying focused on both the bigger picture and day-to-day tasks.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Selfless Action and Detachment from Results</span>
+                                <h5>Acting Without Attachment:</h5>
+                                <p> In the Gita, Krishna advises Arjuna to act without attachment to the results of his actions. This teaching is particularly relevant in today’s world, where people often define their 
+                                    self-worth by their achievements, promotions, or recognition. Krishna’s wisdom reminds us to focus on performing our duties and passions with dedication and integrity, without obsessing over the
+                                     outcomes. Success and failure should not define us; instead, it’s the purpose and intention behind our actions that matter most.</p>
+                                <h5>Mindset Shift:</h5>
+                                <p>
+                                    Applying this to modern life, whether one is starting a business, pursuing a career, or developing a creative passion, the focus should be on doing the work well rather than fixating 
+                                    on accolades or rewards. By practicing detachment, individuals reduce stress and anxiety, allowing for a more peaceful and purpose-driven approach to life.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Purpose as a Path to Personal Growth</span>
+                                <h5>Inner Fulfillment Over External Achievement:</h5>
+                                <p>The Gita teaches that when we live in alignment with our purpose, we experience inner fulfillment—a sense of peace and satisfaction that comes from knowing we are contributing to something 
+                                    greater than ourselves. This growth is not necessarily reflected in material success but in spiritual and emotional well-being. Purpose-driven living encourages individuals to cultivate inner 
+                                    strength, wisdom, and compassion, which are ultimately more fulfilling than external achievements.</p>
+                                <h5>Continual Self-Improvement:</h5>
+                                <p> Pursuing one’s purpose is also a path of self-improvement. The Gita suggests that living with purpose often involves overcoming challenges, refining one’s skills, and growing as a person.
+                                    Whether it’s facing adversity, learning new skills, or cultivating patience and resilience, personal growth is an integral part of purpose-driven living. This growth not only benefits the 
+                                    individual but also allows them to contribute more effectively to society.
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("keydown", function(event) {
+                if (event.key === "ArrowLeft") {
+                    window.location.href = "ethics.html";
+                } else if (event.key === "ArrowRight") {
+                    window.location.href = "manage.html";
+                }
+            });
+            function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdown");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+        </script>
+    </div>
+</body>
+</html>

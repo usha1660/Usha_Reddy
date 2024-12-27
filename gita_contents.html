@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTENTS</title>
+    <style>
+    .bg-container {
+        background-color:#fdf9f2;
+        background-size: cover;
+        height: 115vh;
+    }
+    .heading {
+      text-align: center;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      padding: 5px;
+      color: #a0522d;
+    }
+    h3 {
+        color: #a0522d;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+        text-align:left;
+        margin: 15px;
+    }
+    .content-container {
+        border-radius: 5px;
+        border-width: 0px;
+        margin: 15px;
+        padding: 7px;
+        opacity: 79%;
+    }
+    h4 {
+        color: #a0522d;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .link :hover {
+        color: #5a2004;
+        text-decoration: underline;
+    }
+    nav {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        z-index: 1;
+        background-color: rgba(219, 155, 71, 0.521);
+        padding: 0px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0; 
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .Unordered-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        }
+
+        ul li {
+        position: relative;
+        }
+
+        ul li a {
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        }
+
+    
+        ul li a:hover {
+        color: black;
+        }
+        </style>
+</head>
+<body>
+    <nav>
+        <ul class="Unordered-list">
+          <li><a href="ino_gita.html">Home</a></li>
+          <li><a href="gita_contents.html">Contents</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="gita_home.html">Back</a></li>
+        </ul>
+    </nav>
+    <div class="bg-container" style="padding:20px;margin-top:40px;">
+        <h1 class="heading">GITA FOR MODERN LIFE</h1>
+        <h3>CONTENTS</h3>
+        <div class="content-container">
+            <a href='mental_health.html' class="link">
+                <h4>1. Mental Health and Stress Management</h4>
+            </a>
+            <hr>
+            <a href='decision.html' class="link">
+                <h4>2. Decision Making and Leadership</h4>
+            </a>
+            <hr>
+            <a href='work_life.html' class="link">
+                <h4>3. Work-Life Balance and Career</h4>
+            </a>
+            <hr>
+            <a href='growth.html' class="link">
+                <h4>4. Personal Growth and Self-Realization</h4>
+            </a>
+            <hr>
+            <a href='fear.html' class="link">
+                <h4>5. Overcoming Fear and Doubt</h4>
+            </a>
+            <hr>
+            <a href='relationship.html' class="link">
+                <h4>6. Relationships and Emotional Well-being</h4>
+            </a>
+            <hr>
+            <a href='meditation.html' class="link">
+                <h4>7. Spiritual Growth and Meditation</h4>
+            </a>
+            <hr>
+            <a href='ethics.html' class="link">
+                <h4>8. Ethics and Morality</h4>
+            </a>
+            <hr>
+            <a href='purpose.html' class="link">
+                <h4>9. Living with Purpose</h4>
+            </a>
+            <hr>
+            <a href='manage.html' class="link">
+                <h4>10. Managing Materialism and Detachment</h4>
+            </a>
+        </div>
+    </div>  
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowLeft") {
+                window.location.href = "ino_gita.html";
+            } else if (event.key === "ArrowRight") {
+                window.location.href = "mental_health.html";
+            }
+        });
+    </script>
+</body>
+</html>

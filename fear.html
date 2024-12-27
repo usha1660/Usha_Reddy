@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c1ab5f16d.js" crossorigin="anonymous"></script>
+    <title>Overcoming Fear and Doubt</title>
+    <style>
+        .bg-container{
+            background-color:#fdf9f2;
+            background-size: cover;
+            height: 100vh;
+        }
+        .heading {
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 5px;
+            color: #a55834ea;
+        }
+        .verse {
+            margin: 15px;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #3a3a3a;
+            background: #f9f5ec;
+            padding: 10px;
+            border-left: 4px solid #d4af37;
+        }
+        .verse-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: start;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .verse, .translation {
+            padding: 15px;
+            background-color: #f9f5ec;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .translation {
+            margin: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #3a3a3a;
+            background: #f9f5ec;
+            padding: 10px;
+            border-left: 4px solid #d4af37;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .text-container {
+            box-shadow: 0 2px 6px rgb(98, 42, 24);
+            margin: 12px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .button {
+            background-color: blanchedalmond;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(117, 52, 30, 0.734);
+            padding: 7px;
+        } 
+        nav {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        z-index: 1;
+        background-color: rgba(219, 155, 71, 0.521);
+        padding: 0px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0; 
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .Unordered-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        }
+
+        ul li {
+        position: relative;
+        }
+
+        ul li a {
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        }
+
+    
+        ul li a:hover {
+        color: black;
+        }
+        .navbar-dropdown {
+            margin-top: 30px;
+            margin-bottom: 20px; 
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: rgba(219, 155, 71, 0.521);
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            height:fit-content;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width:max-content;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #a55834ea;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .lines {
+          color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="Unordered-list">
+          <li><a href="ino_gita.html">Home</a></li>
+          <li><a href="gita_contents.html">Contents</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="gita_contents.html">Back</li>
+
+        </ul>
+      </nav>
+    <div class="bg-container" style="padding:20px;margin-top:40px;">
+      <div class="navbar-dropdown">
+        <div class="dropdown">
+
+            <button class="dropdown-button">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="mental_health.html">1. Mental Health and Stress Management</a>
+                <a href="decision.html">2. Decision Making and Leadership</a>
+                <a href="work_life.html">3. Work-Life Balance and Career</a>
+                <a href="growth.html">4. Personal Growth and Self-Realization</a>
+                <a href="fear.html">5. Overcoming Fear and Doubt</a>
+                <a href="relationship.html">6. Relationships and Emotional Well-being</a>
+                <a href="meditation.html">7. Spiritual Growth and Meditation</a>
+                <a href="ethics.html">8. Ethics and Morality</a>
+                <a href="purpose.html">9. Living with Purpose</a>
+                <a href="manage.html">10. Managing Materialism and Detachment</a>
+            </div>
+      </div>
+    </div>
+        <h1 class="heading">5. OVERCOMING FEAR AND DOUBT</h1>
+        <h2 class="heading">Gita Teaching: Courage in the Face of Uncertainty (Chapter 4, Verse 10)</h2>
+        <div class="text-container">
+            <h4 class="verse">
+                Verse: <br>
+                vīta-rāga-bhaya-krodhā man-mayā mām upāśhritāḥ<br>bahavo jñāna-tapasā pūtā mad-bhāvam āgatāḥ
+            <h4>
+            <p class="translation">
+                Translation: <br>
+                Being free from attachment, fear, and anger, becoming fully absorbed in Me, and taking refuge in Me,
+                 many persons in the past became purified by knowledge of Me, and thus attained My divine love.
+            </p>
+        <div class="d-flex flex-container justify-content-end">
+        <button type="button" class="button" data-toggle="modal" data-target="#exampleModal" >
+            Modern Application
+          </button>
+        </div>
+          <div class="modal fad" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modern Application</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Overcoming Fear, Doubt, and Indecision</h3>
+                    <div style="font-weight: lighter;">
+                    <p>
+                        In today’s world, fear and doubt often stem from insecurity, external pressure, and an uncertain future. These emotions can paralyze individuals, making it difficult to take action or make decisions.
+                        By cultivating a mindset of courage and trust, individuals can overcome fear and doubt, face challenges with resilience, and move forward with clarity. This teaching isn’t about blind faith but rather
+                         about developing inner strength through spiritual grounding, leading to decisive action even in the face of uncertainty.
+                        <ul>
+                            <li>
+                                <span style="font-weight: bold;">Understanding Fear and Doubt: The Roots of Indecision</span>
+                                <h5>The Nature of Fear:</h5>
+                                <p>Fear often arises from the unknown or the anticipation of failure. Doubt, on the other hand, stems from a lack of self-confidence and trust in the future. Both fear and doubt create indecision, 
+                                    paralyzing individuals and preventing them from taking action.</p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Spiritual Confidence: Trusting in Yourself and the Divine</span>
+                                <h5>Navigating Uncertainty with Spiritual Confidence:</h5>
+                                <p> Today, individuals face countless situations where fear and doubt hinder their progress—whether in their careers, personal relationships, or life decisions.
+                                     By cultivating spiritual confidence—a belief in oneself and a higher purpose—they can navigate uncertainty with clarity. 
+                                    This confidence doesn’t eliminate challenges but provides the strength to face them head-on.</p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Techniques to Overcome Fear and Doubt</span>
+                                <h5>Mindfulness and Meditation:</h5>
+                                <p>Regular mindfulness and meditation practice helps individuals observe their fears without being consumed by them. Meditation allows for a deeper connection with the inner self,
+                                     cultivating a sense of calm and inner peace that can overpower fear and doubt.</p>
+                                <h5>Affirmations and Positive Visualization:</h5>
+                                <p> By practicing positive affirmations, individuals can rewire their thought patterns, replacing negative self-talk with empowering beliefs. Visualizing success, courage,
+                                     and positive outcomes reinforces confidence and helps reduce fear-driven thinking.
+                                </p>
+                                <h5>Taking Action in Small Steps:</h5>
+                                <p>One of the most effective ways to overcome fear and indecision is to take action, even in small steps. Krishna encourages Arjuna to act without attachment to results.
+                                     In the same way, when individuals break tasks into smaller, manageable actions, they gain confidence, and fear starts to dissolve.</p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Detachment from Outcome: Courage through Non-Attachment</span>
+                                <h5>Gita’s Teaching on Non-Attachment:</h5>
+                                <p>Krishna teaches Arjuna to act without attachment to success or failure. By detaching from the outcomes, one can focus on the action itself with full presence and courage. 
+                                    This non-attachment frees individuals from the fear of failure, allowing them to move forward with a clear mind.</p>
+                                <h5>Modern Relevance:</h5>
+                                <p> In life, much of our fear stems from the anxiety of not achieving our desired outcomes. By adopting the Gita’s principle of non-attachment, individuals can shift
+                                     their focus to the process rather than the result, reducing the pressure that comes from fear of failure or judgment.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Finding Purpose to Overcome Doubt</span>
+                                <h5>Purpose as a Source of Strength:</h5>
+                                <p>Krishna helps Arjuna realize his Dharma—his duty or purpose in life—which gives him the strength to act decisively despite his doubts. When individuals align with their purpose, 
+                                    they find an inner motivation that transcends temporary fears and uncertainties.</p>
+                                <h5>Identifying Your Purpose:</h5>
+                                <p> Encourage individuals to reflect on their deeper purpose in life—whether it’s personal growth, helping others, or contributing to a larger cause. This sense of purpose serves as 
+                                    an anchor in times of doubt, providing direction and motivation when fear arises.
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowLeft") {
+                window.location.href = "growth.html";
+            } else if (event.key === "ArrowRight") {
+                window.location.href = "relationship.html";
+            }
+        });
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdown");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

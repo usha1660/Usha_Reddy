@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c1ab5f16d.js" crossorigin="anonymous"></script>
+    <title>Managing Materialism and Detachment</title>
+    <style>
+        .bg-container{
+            background-color:#fdf9f2;
+            background-size: cover;
+            height: 100vh;
+        }
+        .heading {
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 5px;
+            color: #a55834ea;
+        }
+        .verse {
+            margin: 15px;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #3a3a3a;
+            background: #f9f5ec;
+            padding: 10px;
+            border-left: 4px solid #d4af37;
+        }
+        .verse-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: start;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .verse, .translation {
+            padding: 15px;
+            background-color: #f9f5ec;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .translation {
+            margin: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #3a3a3a;
+            background: #f9f5ec;
+            padding: 10px;
+            border-left: 4px solid #d4af37;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .text-container {
+            box-shadow: 0 2px 6px rgb(98, 42, 24);
+            margin: 12px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .button {
+            background-color: blanchedalmond;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(117, 52, 30, 0.734);
+            padding: 7px;
+        } 
+        nav {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        z-index: 1;
+        background-color: rgba(219, 155, 71, 0.521);
+        padding: 0px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0; 
+        }
+
+        .Unordered-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        }
+
+        ul li {
+        position: relative;
+        }
+
+        ul li a {
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        }
+
+    
+        ul li a:hover {
+        color: black;
+        }
+        .navbar-dropdown {
+            margin-top: 30px;
+            margin-bottom: 20px; 
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: rgba(219, 155, 71, 0.521);
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            height:fit-content;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width:max-content;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #a55834ea;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .lines {
+          color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="Unordered-list">
+          <li><a href="ino_gita.html">Home</a></li>
+          <li><a href="gita_contents.html">Contents</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="gita_contents.html">Back</li>
+
+        </ul>
+      </nav>
+    <div class="bg-container" style="padding:20px;margin-top:40px;">
+        <div class="navbar-dropdown">
+            <div class="dropdown">
+    
+                <button class="dropdown-button">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="mental_health.html">1. Mental Health and Stress Management</a>
+                    <a href="decision.html">2. Decision Making and Leadership</a>
+                    <a href="work_life.html">3. Work-Life Balance and Career</a>
+                    <a href="growth.html">4. Personal Growth and Self-Realization</a>
+                    <a href="fear.html">5. Overcoming Fear and Doubt</a>
+                    <a href="relationship.html">6. Relationships and Emotional Well-being</a>
+                    <a href="meditation.html">7. Spiritual Growth and Meditation</a>
+                    <a href="ethics.html">8. Ethics and Morality</a>
+                    <a href="purpose.html">9. Living with Purpose</a>
+                    <a href="manage.html">10. Managing Materialism and Detachment</a>
+                </div>
+          </div>
+        </div>
+        <h1 class="heading">10. MANAGING MATERIALISM AND DETACHMENT</h1>
+        <h2 class="heading">Gita Teaching: Detachment from Material Possessions (Chapter 2, Verse 64)</h2>
+        <div class="text-container">
+        <h4 class="verse">
+            Verse: <br>
+            rāga-dveṣha-viyuktais tu viṣhayān indriyaiśh charan<br>ātma-vaśhyair-vidheyātmā prasādam adhigachchhati
+        <h4>
+        <p class="translation">
+            Translation: <br>
+            But one who controls the mind, and is free from attachment and aversion, even while using the objects of the senses, attains the Grace of God.
+        </p>
+        <div class="d-flex flex-container justify-content-end">
+        <button type="button" class="button" data-toggle="modal" data-target="#exampleModal" >
+            Modern Application
+          </button>
+        </div>
+          <div class="modal fad" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modern Application</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Managing Desires, Consumerism, and Materialism in Today’s World</h3>
+                    <div style="font-weight: lighter;">
+                    <p style="padding:20px;margin: 10px;">
+                        In today’s consumer-driven society, where success and happiness are often equated with material wealth, the Gita’s teachings on detachment provide a timeless solution to managing
+                         desires without compromising inner peace or well-being. The challenge is not in owning possessions, but in the attachment to them—the belief that material things will bring lasting 
+                         happiness. Practicing detachment allows individuals to enjoy life and material comforts without becoming consumed by the endless pursuit of more.
+                        <ul>
+                            <li>
+                                <span style="font-weight: bold;">Understanding Detachment in a Materialistic World</span>
+                                <h5>The Illusion of Lasting Happiness Through Possessions:</h5>
+                                <p>
+                                    Modern consumer culture promotes the idea that material goods—whether it’s the latest gadgets, luxury cars, or designer clothes—are the key to happiness. However,
+                                     the Gita teaches that material possessions are fleeting and do not bring lasting fulfillment. Krishna advises that true happiness comes from within, not from external 
+                                     things. In today’s world, this teaching encourages individuals to recognize that while material goods can provide temporary satisfaction, they cannot offer deep or permanent happiness.
+                                </p>
+                                <h5>Detachment vs. Renunciation:</h5>
+                                <p>
+                                    Detachment doesn’t mean giving up all possessions or renouncing the world entirely. Instead, it’s about changing one’s relationship with material things—enjoying them without being 
+                                    enslaved by them. A person can live in society, engage in business, and have possessions, but without identifying their self-worth or happiness with these external factors.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Balancing Desires and Spiritual Well-being</span>
+                                <h5>Managing Desires in a Healthy Way:</h5>
+                                <p>
+                                    Desires are natural, and the Gita does not advocate for the complete suppression of all desires. Instead, it teaches individuals to manage their desires wisely. 
+                                    This involves practicing self-restraint and distinguishing between needs and excessive wants. By being mindful of desires and avoiding impulsive consumerism, 
+                                    individuals can make more thoughtful decisions about what truly brings value and meaning to their lives.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Detachment and Fulfillment: Living with Less, Enjoying More</span>
+                                <h5>Simplicity and Contentment:</h5>
+                                <p> Practicing detachment allows individuals to live more simply, appreciating what they already have rather than constantly seeking more. This simplicity doesn’t mean 
+                                    living in poverty or depriving oneself, but rather, focusing on quality over quantity and recognizing that real happiness doesn’t come from accumulation. As people
+                                     learn to detach from materialism, they often find that they are more content, less stressed, and have a greater sense of inner peace.</p>
+                                <h5>Letting Go of the Need for External Validation:</h5>
+                                <p>
+                                    In a world where social status is often tied to material wealth, detachment also involves letting go of the need for validation through possessions. 
+                                    Whether it’s seeking approval through expensive cars, homes, or branded goods, the Gita teaches that personal worth and success should be measured by one’s 
+                                    inner qualities—such as compassion, wisdom, and humility—rather than by external displays of wealth. This shift in mindset can lead to more meaningful, fulfilling relationships and personal growth.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Engaging with Society Without Becoming Materialistic</span>
+                                <h5>Contributing to Society Without Attachment:</h5>
+                                <p>The Gita encourages individuals to be active participants in society, fulfilling their roles and responsibilities, but without becoming attached to material rewards. 
+                                    This can be particularly challenging in a world where success is often measured in terms of wealth or career achievements. However, Krishna’s teaching suggests 
+                                    that while one can engage in work, business, and social life, the key is to do so with a sense of purpose and contribution, rather than for the sole pursuit of material gain.</p>
+                                <h5>Detachment in the Workplace:</h5>
+                                <p> For professionals, this teaching can be applied by focusing on the quality and integrity of their work rather than being solely driven by financial incentives or promotions. 
+                                    By performing their duties with dedication but without obsessive attachment to the outcomes, individuals can reduce stress and find more satisfaction in their work. This 
+                                    approach also leads to greater resilience, as one is less affected by setbacks or failures when their sense of self-worth isn’t tied to material success.
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowLeft") {
+                window.location.href = "purpose.html";
+            } else if (event.key === "ArrowRight") {
+                window.location.href = "testimonials.html";
+            }
+        });
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdown");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

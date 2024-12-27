@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c1ab5f16d.js" crossorigin="anonymous"></script>
+    <title>Work-Life Balance and Career</title>
+    <style>
+        .bg-container{
+            background-color:#fdf9f2;
+            background-size: cover;
+            height: 100vh;
+        }
+        .heading {
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 5px;
+            color: #a55834ea;
+        }
+        .verse {
+            margin: 15px;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #3a3a3a;
+            background: #f9f5ec;
+            padding: 10px;
+            border-left: 4px solid #d4af37;
+        }
+        .verse-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: start;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .verse, .translation {
+            padding: 15px;
+            background-color: #f9f5ec;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .translation {
+            margin: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #3a3a3a;
+            background: #f9f5ec;
+            padding: 10px;
+            border-left: 4px solid #d4af37;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .text-container {
+            box-shadow: 0 2px 6px rgb(98, 42, 24);
+            margin: 12px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .button {
+            background-color: blanchedalmond;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(117, 52, 30, 0.734);
+            padding: 7px;
+        } 
+        nav {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        z-index: 1;
+        background-color: rgba(219, 155, 71, 0.521);
+        padding: 0px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .Unordered-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        }
+
+        ul li {
+        position: relative;
+        }
+
+        ul li a {
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        }
+
+    
+        ul li a:hover {
+        color: black;
+        }
+        .navbar-dropdown {
+            margin-top: 30px;
+            margin-bottom: 20px; 
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: rgba(219, 155, 71, 0.521);
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            height:fit-content;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width:max-content;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #a55834ea;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .lines {
+          color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="Unordered-list">
+          <li><a href="ino_gita.html">Home</a></li>
+          <li><a href="gita_contents.html">Contents</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+
+        </ul>
+      </nav>
+    <div class="bg-container" style="padding:20px;margin-top:40px;">
+        <div class="navbar-dropdown">
+            <div class="dropdown">
+    
+                <button class="dropdown-button">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="mental_health.html">1. Mental Health and Stress Management</a>
+                    <a href="decision.html">2. Decision Making and Leadership</a>
+                    <a href="work_life.html">3. Work-Life Balance and Career</a>
+                    <a href="growth.html">4. Personal Growth and Self-Realization</a>
+                    <a href="fear.html">5. Overcoming Fear and Doubt</a>
+                    <a href="relationship.html">6. Relationships and Emotional Well-being</a>
+                    <a href="meditation.html">7. Spiritual Growth and Meditation</a>
+                    <a href="ethics.html">8. Ethics and Morality</a>
+                    <a href="purpose.html">9. Living with Purpose</a>
+                    <a href="manage.html">10. Managing Materialism and Detachment</a>
+                </div>
+          </div>
+        </div>
+        <h1 class="heading">3. WORK-LIFE BALANCE AND CAREER</h1>
+        <h2 class="heading">Gita Teaching: Selfless action (Nishkama Karma)—acting without selfish motives (Chapter 3, Verse 19)</h2>
+        <div class="text-container">
+        <h4 class="verse">
+            Verse: <br>
+            tasmād asaktaḥ satataṁ kāryaṁ karma samāchara <br>asakto hyācharan karma param āpnoti pūruṣhaḥ
+        <h4>
+        <p class="translation">
+            Translation: <br>
+            Therefore, giving up attachment, perform actions as a matter of duty 
+            because by working without being attached to the fruits, one attains the Supreme.
+        </p>
+        <div class="d-flex flex-container justify-content-end">
+        <button type="button" class="button" data-toggle="modal" data-target="#exampleModal" >
+            Modern Application
+          </button>
+        </div>
+          <div class="modal fad" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modern Application</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Pursuing Passion Without Losing Yourself</h3>
+                    <div style="font-weight: lighter;">
+                    <p>
+                        In today’s career-driven world, many professionals get caught in the cycle of over-identifying 
+                        with success and failure, leading to stress, burnout, and dissatisfaction. The concept of Nishkama 
+                        Karma teaches us to work passionately while maintaining detachment from the fruits of our labor.
+                        <ul>
+                            <li>
+                                <span style="font-weight: bold;">Introduction: Understanding Nishkama Karma</span>
+                                <p>
+                                    Draw parallels with today’s professional challenges, where people feel pressured to prove themselves,
+                                     climb the corporate ladder, or achieve societal benchmarks of success.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">The Trap of Over-Identifying with Success and Failure</span>
+                                <h5>Success as an Obsession:</h5>
+                                <p>Obsession with career achievements, such as promotions, salary hikes, or recognition, can lead 
+                                    to chronic stress, anxiety, and dissatisfaction. Over-identification with success often causes 
+                                    people to derive their entire sense of self-worth from their professional identity.</p>
+                                <h5>Fear of Failure:</h5>
+                                <p>
+                                    The constant fear of failure can make professionals risk-averse, leading to stagnation and self-doubt. 
+                                    This is where the teaching of the Gita offers a crucial insight: detachment from outcomes 
+                                    allows professionals to take bold steps and innovate without the crippling fear of falling short.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Balancing Passion and Detachment</span>
+                                <h5>Pursuing Passion:</h5>
+                                <p> It’s about doing what you love with passion, yet cultivating the inner discipline not to be emotionally tied to the success or failure of your efforts.</p>
+                                <h5>Maintaining Detachment:</h5>
+                                <p>
+                                    This balance can be achieved through mindfulness practices, recognizing that external achievements are temporary and not a true measure of self-worth. 
+                                    The real value lies in the process—the learning, growth, and impact created along the way.
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">How to Practice Nishkama Karma in Professional Life</span>
+                                <h5>Focus on Effort, Not Results:</h5>
+                                <p>Shift the focus from outcomes to effort. Set professional goals, but don’t let those goals define your happiness.</p>
+                                <h5>Set Boundaries to Avoid Burnout:</h5>
+                                <p> Detachment helps create emotional and psychological boundaries between personal life and work. This prevents professionals from overworking
+                                     themselves due to the constant need for external validation or success.
+                                </p>
+                                <h5>Mindful Decision-Making:</h5>
+                                <p>Mindfulness helps professionals take decisions based on values and long-term purpose, rather than 
+                                    chasing short-term rewards or societal expectations. Regularly practicing gratitude can 
+                                    reinforce the idea that contentment comes from within, not from material success.</p>
+                                <h5>Embrace Failure as Learning:</h5>
+                                <p>Detaching from outcomes allows professionals to view failures as learning opportunities rather than setbacks. With this mindset,
+                                     each challenge becomes a stepping stone toward personal growth. 
+                                </p>
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">Mental Peace and Sustainable Career Growth</span>
+                                <h5>Mental Peace:</h5>
+                                <p>Detaching from the highs and lows of professional life leads to a state of mental peace and emotional equilibrium. 
+                                    By focusing on self-improvement and intrinsic values 
+                                    rather than external rewards, professionals can avoid burnout and cultivate long-term satisfaction.</p>
+                                <h5>Sustainable Growth:</h5>
+                                <p>
+                                    In the long run, adopting a Nishkama Karma mindset fosters resilience and creativity. 
+                                    When the fear of failure no longer holds someone back, they can experiment, innovate, 
+                                    and pursue meaningful career paths without worrying about immediate outcomes.
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowLeft") {
+                window.location.href = "decision.html";
+            } else if (event.key === "ArrowRight") {
+                window.location.href = "growth.html";
+            }
+        });
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdown");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
